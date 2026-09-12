@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nostra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo" href="index.html">nostra</a>
+      <nav class="desktop-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a class="active" href="contact.html">Contact</a></nav>
+      <div class="nav-actions"><a class="icon-link" href="collections.html" aria-label="Search">⌕</a><button class="icon-btn cart-toggle">Bag <span class="count cart-count">0</span></button><button class="menu-btn" aria-label="Open menu"><span></span><span></span></button></div>
+    </div>
+    <div class="mobile-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <main>
+    <section class="contact-hero"><p class="eyebrow">NOSTRA / CONTACT</p><h1>Let's start a<br><em>conversation.</em></h1></section>
+    <section class="section contact-section">
+      <div class="contact-info reveal">
+        <p class="eyebrow">GET IN TOUCH</p><h2>We'd love to<br>hear from you.</h2>
+        <p>Whether you have a question about an order, need styling help or simply want to say hello, our team is here.</p>
+        <div class="contact-detail"><span>Email</span><a href="mailto:hello@nostra.example">hello@nostra.example</a></div>
+        <div class="contact-detail"><span>Hours</span><p>Monday — Saturday<br>10:00 AM — 7:00 PM</p></div>
+        <div class="contact-detail"><span>Studio</span><p>Chennai, Tamil Nadu<br>India</p></div>
+      </div>
+      <form class="contact-form reveal delay-1" id="contactForm">
+        <div class="field-row"><label>Full name<input type="text" id="contactName" required placeholder="Your name"></label><label>Email address<input type="email" id="contactEmail" required placeholder="you@example.com"></label></div>
+        <label>Subject<select id="contactSubject"><option>General enquiry</option><option>Order support</option><option>Returns & exchange</option><option>Styling assistance</option></select></label>
+        <label>Message<textarea id="contactMessage" required rows="7" placeholder="Tell us how we can help..."></textarea></label>
+        <button class="btn btn-dark" type="submit">Send message <span>→</span></button>
+        <p class="form-message" id="contactMessageStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div><a class="logo footer-logo" href="index.html">nostra</a><p>Modern fashion for<br>everyday confidence.</p></div><div><h4>Explore</h4><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="contact.html">Contact</a></div><div><h4>Customer care</h4><a href="contact.html">Shipping & returns</a><a href="contact.html">Help centre</a><a href="contact.html">Contact support</a></div><div><h4>Follow</h4><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Facebook</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Nostra. All rights reserved.</span><span>Designed with intention.</span></div>
+  </footer>
+  <div class="cart-panel" id="cartPanel"><div class="panel-head"><h3>Your bag</h3><button class="close-panel">×</button></div><div id="cartItems" class="cart-items"><p class="empty-state">Your bag is empty.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-dark checkout-btn" id="checkoutBtn">Proceed to checkout</button></div>
+  <div class="panel-overlay"></div><div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

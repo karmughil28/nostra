@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections — Nostra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo" href="index.html">nostra</a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a><a class="active" href="collections.html">Collections</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn wishlist-toggle" aria-label="Wishlist">♡</button>
+        <button class="icon-btn cart-toggle" aria-label="Cart">Bag <span class="count cart-count">0</span></button>
+        <button class="menu-btn" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="contact.html">Contact</a></div>
+  </header>
+
+  <main>
+    <section class="collection-hero">
+      <p class="eyebrow">NOSTRA / COLLECTIONS</p>
+      <h1>Find your<br><em>next favourite.</em></h1>
+      <p>Explore our latest collection of modern essentials, statement pieces and everyday favourites.</p>
+    </section>
+
+    <section class="section collection-section">
+      <div class="collection-toolbar">
+        <div class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..."></div>
+        <div class="filter-wrap">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Dresses">Dresses</button>
+          <button class="filter-btn" data-filter="Tops">Tops</button>
+          <button class="filter-btn" data-filter="Outerwear">Outerwear</button>
+          <button class="filter-btn" data-filter="Accessories">Accessories</button>
+        </div>
+      </div>
+      <div class="results-row"><span id="resultCount">Showing all products</span><button id="clearFilters" class="clear-btn">Clear filters</button></div>
+      <div class="product-grid" id="collectionProducts"></div>
+      <div class="no-results" id="noResults"><h3>No pieces found</h3><p>Try another search or category.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div><a class="logo footer-logo" href="index.html">nostra</a><p>Modern fashion for<br>everyday confidence.</p></div>
+      <div><h4>Explore</h4><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="contact.html">Contact</a></div>
+      <div><h4>Customer care</h4><a href="contact.html">Shipping & returns</a><a href="contact.html">Help centre</a><a href="contact.html">Contact support</a></div>
+      <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Facebook</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Nostra. All rights reserved.</span><span>Designed with intention.</span></div>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel"><div class="panel-head"><h3>Your bag</h3><button class="close-panel">×</button></div><div id="cartItems" class="cart-items"><p class="empty-state">Your bag is empty.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-dark checkout-btn" id="checkoutBtn">Proceed to checkout</button></div>
+  <div class="panel-overlay"></div><div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
